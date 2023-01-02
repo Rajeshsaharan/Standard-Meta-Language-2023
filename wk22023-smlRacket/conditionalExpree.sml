@@ -19,3 +19,15 @@ evulation :- evaluate to e1 to e2 to value
 
 
 *)
+
+(* 
+conditional syntex :_       
+if e1 then e2 else e3
+where if , then and else are syntex and lang. keyword
+
+type-checking :-
+first e1 must have type bool;
+and e2 and e3 can be any type (T) but must have same type Q! important
+--> the total type of conditional expression will be (T) type
+
+)
