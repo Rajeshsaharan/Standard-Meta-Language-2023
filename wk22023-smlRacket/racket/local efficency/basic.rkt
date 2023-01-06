@@ -37,7 +37,7 @@
 
 
 ;;here is a sort the list function
-
+;; defining variable for recursive is a good thing
 
 (define (sort2 lon) (cond [(empty? lon) lon]
                           [(empty? (rest lon)) lon]
