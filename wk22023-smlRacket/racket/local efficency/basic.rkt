@@ -14,8 +14,24 @@
                             [else (if (> (first lon) (bad_max (rest lon))) (first lon) (bad_max (rest lon)))]
                             ))
 
-
 (bad_max (list 1 2 3 4 ))
+
+
+
+; bad_max( (rest lon)) runs two time it need more compute power
+
+; we can store in variable using local
+
+
+(define (good_max lon) (cond [(empty? lon) 0]
+                             [(empty? (rest lon)) (first lon)]
+                             [else (local [(define V (good_max (rest lon)))] (if (= (first lon) V) (first lon) V))]))
+
+
+
+(good_max (list 1 2 3 4 5 6 7))
+
+
 
 
 
