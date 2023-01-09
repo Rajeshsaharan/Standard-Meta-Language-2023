@@ -25,3 +25,5 @@ fun good_max (xs : int list) =
                 else tl_ans 
 
 
+(*here we are using options *)
+(* here we return 0 when empty list on good_max *)

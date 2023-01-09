@@ -14,11 +14,23 @@ each of
 ; options data type contain an int or it contains no data
 
 ;; list contains [1]-> int list
-                [1 [1]] list int int list
-                () ; it contains no data type :- alpha list can be replace by any list data type
+                 [1 [1]] int list list
+                 [] 'a list ('a can be replaced by any basic data types string , int and tuples and either a int list)         ;    it contains no data type :- alpha list can be replace by any list data type
 ;; list type also can be constructed by :: (cons operator)
 
 ;; we can compare , to star (*) whenever type check
 
 )
+
+(example datatype )
+
+
+*)
+
+*)
+
+
+datatype mytype = TwoIns of int * int | str of string | pizza
+
+(*twoInt and str both are function constrctor pizza is also a constructor*)
 
