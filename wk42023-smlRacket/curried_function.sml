@@ -54,3 +54,9 @@ fun add x= x+1;
 
 map_v2 add [1,2,3]; (*output -> [2,3,4] *)
 
+
+(*curried function can be works as parital application we can call them fewer argument and can be used for next argumnent*)
+
+val add_all_list_with_1 = map add ; (*here we didnt pass third argument but we can call with that argument later*)
+
+val list = add_all_list_with_1 [1 ,2 ,3] (*output will be same *)
